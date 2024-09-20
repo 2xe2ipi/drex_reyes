@@ -1,0 +1,112 @@
+#works {
+  min-height: 100vh; /* Minimum height of the viewport */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* Center content vertically */
+  text-align: center;
+  margin: 0 auto;
+  background-color: #282c34; /* Match the dark background */
+  color: white; /* Match the text color */
+  font-family: 'YourHeroFont', sans-serif; /* Replace with your hero font */
+  padding: 20px 0; /* Add some padding to the top */
+}
+
+.workTitle {
+  font-size: 4rem; /* Larger title */
+  font-weight: 600;
+  margin-bottom: 2rem; /* More space below the title */
+  position: absolute; /* Position the title absolutely */
+  top: 20px; /* Adjust top position */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Adjust for centering */
+  z-index: 10; /* Ensure it is above other content */
+}
+
+.container {
+  position: relative; /* Position relative for navigation buttons */
+  width: 100%; /* Full width */
+  max-width: 1200px; /* Max width for larger screens */
+  display: flex; /* Ensure flex layout */
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center items */
+  justify-content: center; /* Center items vertically */
+}
+
+.box {
+  background: rgba(97, 218, 251, 0.1); /* Light background for boxes */
+  border: 2px solid #61dafb; /* Accent border color */
+  border-radius: 10px;
+  text-align: center;
+  padding: 20px;
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+  height: 70vh; /* Occupy more vertical space */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* Center content vertically */
+  position: absolute; /* Position both boxes absolutely */
+  width: 100%;
+  opacity: 0; /* Start hidden */
+}
+
+.current {
+  opacity: 1; /* Current project visible */
+}
+
+.next {
+  transform: translateX(100%); /* Shift next box off-screen */
+  opacity: 0.5; /* Slightly transparent */
+}
+
+.prev {
+  transform: translateX(-100%); /* Shift previous box off-screen */
+  opacity: 0.5; /* Slightly transparent */
+}
+
+.box img {
+  height: 60%; /* Adjust image height to fill the box */
+  width: auto; /* Maintain aspect ratio */
+  max-height: 400px; /* Max height for larger screens */
+  margin-bottom: 15px; /* Space below image */
+  object-fit: cover; /* Maintain aspect ratio */
+}
+
+.box h3 {
+  color: white; /* Text color */
+  font-size: 2rem; /* Larger title */
+  padding: 10px 0;
+}
+
+.box p {
+  color: white; /* Text color */
+  font-size: 1.5rem; /* Larger description text */
+  line-height: 1.6;
+}
+
+.navigation {
+  position: absolute; /* Position buttons absolutely within the container */
+  width: 100%;
+  display: flex;
+  justify-content: space-between; /* Spread buttons to both sides */
+  top: 50%; /* Center vertically */
+  transform: translateY(-50%); /* Adjust for button height */
+  padding: 0 70px; /* Adjust padding for more space */
+}
+
+.nav-btn {
+  background: rgba(97, 218, 251, 0.5); /* Semi-transparent background */
+  border: none;
+  color: white;
+  font-size: 2rem; /* Larger font for visibility */
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.3s;
+  position: relative; /* Allow positioning adjustments */
+  left: -10px; /* Move left arrow further left */
+}
+
+.nav-btn:hover {
+  background: rgba(97, 218, 251, 0.8); /* Darker on hover */
+}

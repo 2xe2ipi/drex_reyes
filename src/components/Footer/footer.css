@@ -1,0 +1,13 @@
+.footer {
+  width: 100vw; /* Full width */
+  height: 4rem; /* Fixed height */
+  background: rgb(255, 255, 255); /* Light blue background */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 300; /* Light font weight */
+  font-size: medium; /* Font size */
+  color: rgb(0, 121, 140); /* White text color */
+  font-family: 'Poppins', sans-serif; /* Use Poppins font */
+  border-top: 2px solid #ffffff; /* Top border for definition */
+}
